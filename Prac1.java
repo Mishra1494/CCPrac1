@@ -10,7 +10,9 @@ class Prac1{
       int num2 = sc.nextInt();
       System.out.println();
       System.out.print("Enter the sign of operation ");
-      char sign = sc.nextChar();
+      
+      char sign = sc.next().charAt(0);
+    
       Calculator(num1,num2,sign); 
   }
   public static void Calculator(int num1 , int num2, char sign){
@@ -19,11 +21,11 @@ class Prac1{
         return;
       }
       if(sign == '-'){
-        System.out.println("Substraction of 2 numbers are : " + num1 - num2);
+        System.out.println("Substraction of 2 numbers are : " + (num1 - num2));
         return;
       }
       if(sign == '*'){
-        System.out.println("Multiplication  of 2 numbers are : " + num1 * num2);
+        System.out.println("Multiplication  of 2 numbers are : " + (num1 * num2));
         return;
       }
       if(sign == '/'){
@@ -31,7 +33,7 @@ class Prac1{
           System.out.println("dividation not possible ");
           return;
         }
-        System.out.println("Addition of 2 numbers are : " + num2 / num1);
+        System.out.println("Addition of 2 numbers are : " + (num2 / num1));
       }
   }
 }
