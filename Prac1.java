@@ -17,7 +17,7 @@ class Prac1{
   }
   public static void Calculator(int num1 , int num2, char sign){
       if(sign == '+'){
-        System.out.println("Addition of 2 numbers are : " + num1 + num2);
+        System.out.println("Addition of 2 numbers are : " + (num1 + num2));
         return;
       }
       if(sign == '-'){
